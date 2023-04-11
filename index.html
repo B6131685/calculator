@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html data-theme="3" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="theme.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="Calc">Calc</div>
+      <div class="theme">
+        theme
+
+        <div data-select="3"  class="theme-selector">
+            <button class="btn1" onclick="btn1()"></button>
+            <button class="btn2" onclick="btn2()"></button>
+            <button class="btn3" onclick="btn3()"></button>
+        </div>
+      </div>
+    </header>
+    <div class="screen"></div>
+    <div class="numpad">
+      <div class="key" onclick="type('7')"><div class="surface"><div class="text">7</div></div></div>
+      <div class="key" onclick="type('8')"><div class="surface">8</div></div>
+      <div class="key" onclick="type('9')"><div class="surface">9</div></div>
+      <div class="key action" onclick="del()"><div class="surface">DEL</div></div>
+
+      <div class="key" onclick="type('4')"><div class="surface">4</div></div>
+      <div class="key" onclick="type('5')"><div class="surface">5</div></div>
+      <div class="key" onclick="type('6')"><div class="surface">6</div></div>
+      <div class="key" onclick="type('+')"><div class="surface">+</div></div>
+
+      <div class="key" onclick="type('1')"><div class="surface">1</div></div>
+      <div class="key" onclick="type('2')"><div class="surface">2</div></div>
+      <div class="key" onclick="type('3')"><div class="surface">3</div></div>
+      <div class="key" onclick="type('-')"><div class="surface">-</div></div>
+
+      <div class="key" onclick="type('.')"><div class="surface">.</div></div>
+      <div class="key" onclick="type('0')"><div class="surface">0</div></div>
+      <div class="key" onclick="type('/')"><div class="surface">/</div></div>
+      <div class="key" onclick="type('x')"><div class="surface">x</div></div>
+      
+      <div class="key large action" onclick="reset()"><div class="surface">RESET</div></div>
+      <div class="key large result" onclick="calc()"><div class="surface">=</div></div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
